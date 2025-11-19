@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export function Navbar() {
   return (
-    <nav className="bg-transparent border-0 fixed inset-x-0 z-50 flex items-center justify-between px-6 pt-10 py-4 px-6 lg:px-32">
+    <nav className="bg-transparent border-0 fixed inset-x-0 z-50 flex items-center justify-start gap-[12vw] font-sans px-6 pt-10 py-4 px-6 lg:px-32">
       {/* Logo a la izquierda */}
       <Link href="/" className="text-2xl font-bold text-black">
         <Image src="/logo.svg" width={250} height={60} alt="Logo" />

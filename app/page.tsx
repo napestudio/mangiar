@@ -6,20 +6,20 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-w-full">
+    <div className="min-w-full font-sans">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-white px-6 py-[20vh] lg:px-32">
+      <section className="font-sans relative overflow-hidden bg-white px-6 py-[20vh] lg:px-32">
         <div className="mx-auto">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center z-10 relative">
             <div className="space-y-8">
-              <div className="inline-block rounded-full bg-red px-4 py-2 text-sm font-medium text-white">
+              <div className="inline-block py-2 text-sm font-semibold uppercase text-red">
                 Sistema Completo de Gestión
               </div>
-              <h1 className="text-4xl font-semibold tracking-tight text-black lg:text-6xl text-balance">
+              <h1 className="text-4xl font-semibold tracking-tight text-black lg:text-6xl text-pretty">
                 Transformá tu restaurante con{" "}
                 <span className="text-red">mangi.ar</span>
               </h1>
-              <p className="text-lg text-black leading-relaxed text-pretty mb-12">
+              <p className="text-lg text-black font-light leading-relaxed text-pretty mb-12">
                 La plataforma integral que gestiona reservas, ventas, delivery y
                 facturación. Todo lo que necesitás para hacer crecer tu negocio
                 gastronómico.
