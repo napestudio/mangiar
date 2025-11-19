@@ -1,24 +1,25 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Users, TrendingUp, CheckCircle, Receipt, QrCode } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="min-w-full">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-orange-50 via-white to-amber-50 px-6 py-24 lg:px-8 lg:py-32">
-        <div className="mx-auto max-w-7xl">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center">
+      <section className="relative overflow-hidden bg-white px-6 py-[20vh] lg:px-32">
+        <div className="mx-auto">
+          <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center z-10 relative">
             <div className="space-y-8">
-              <div className="inline-block rounded-full bg-orange-100 px-4 py-2 text-sm font-medium text-orange-700">
+              <div className="inline-block rounded-full bg-red px-4 py-2 text-sm font-medium text-white">
                 Sistema Completo de Gestión
               </div>
-              <h1 className="text-5xl font-bold tracking-tight text-gray-900 lg:text-6xl text-balance">
+              <h1 className="text-4xl font-semibold tracking-tight text-black lg:text-6xl text-balance">
                 Transformá tu restaurante con{" "}
-                <span className="text-orange-600">mangi.ar</span>
+                <span className="text-red">mangi.ar</span>
               </h1>
-              <p className="text-xl text-gray-600 leading-relaxed text-pretty">
+              <p className="text-lg text-black leading-relaxed text-pretty mb-12">
                 La plataforma integral que gestiona reservas, ventas, delivery y
                 facturación. Todo lo que necesitás para hacer crecer tu negocio
                 gastronómico.
@@ -26,19 +27,19 @@ export default function Home() {
               <div className="flex flex-col gap-4 sm:flex-row">
                 <Button
                   size="lg"
-                  className="bg-orange-600 hover:bg-orange-700 text-white text-lg px-8"
+                  className="bg-red font-light hover:bg-white text-white hover:text-red text-lg px-8 rounded-full"
                 >
                   Comenzar Gratis
                 </Button>
                 <Button
                   size="lg"
                   variant="outline"
-                  className="text-lg px-8 border-orange-600 text-orange-600 hover:bg-orange-50 bg-transparent"
+                  className="text-lg px-8 border-2 border-red text-red hover:bg-red-50 bg-transparent rounded-full"
                 >
                   Ver Demo
                 </Button>
               </div>
-              <div className="flex items-center gap-8 pt-4">
+              <div className="hidden flex items-center gap-8 pt-4">
                 <div className="flex items-center gap-2">
                   <CheckCircle className="h-5 w-5 text-green-600" />
                   <span className="text-sm text-gray-600">
@@ -54,29 +55,19 @@ export default function Home() {
               </div>
             </div>
             <div className="relative">
-              <div className="relative rounded-2xl bg-gradient-to-br from-orange-400 to-amber-500 p-8 shadow-2xl">
-                <img
-                  src="/modern-restaurant-reservation-dashboard-interface.jpg"
+              <div className="">
+                <Image
+                  src="/sistema-mangiar.png"
                   alt="Dashboard de mangi.ar"
-                  className="rounded-lg shadow-lg"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto rounded-lg"
                 />
-              </div>
-              <div className="absolute -bottom-6 -left-6 rounded-xl bg-white p-4 shadow-xl">
-                <div className="flex items-center gap-3">
-                  <div className="rounded-full bg-green-100 p-2">
-                    <TrendingUp className="h-6 w-6 text-green-600" />
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium text-gray-600">
-                      Ventas hoy
-                    </p>
-                    <p className="text-2xl font-bold text-gray-900">+47</p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
         </div>
+        <div className="absolute -top-10 -right-[45vh] bg-red h-[120vh] aspect-square rounded-full z-0"></div>
       </section>
 
       {/* How it Works */}
